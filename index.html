@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Calculadora Temática</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <input type = "text" id = "txtBox" readonly placeholder="0">
+    <div id = "matrizes">
+        <div id = "matrizOpEspInv" style = "display:none">
+            <button class = "btnAlt" onclick="inv();">inv</button>
+            <button class = "btnAlt" onclick="trocaAngulo();" id = "btnAngInv">rad</button>
+            <button class = "btnAlt" onclick="adicionar('∛(')">∛</button>
+            <button class = "btnAlt" onclick="adicionar('arcsin(')">sin⁻¹</button>
+            <button class = "btnAlt" onclick="adicionar('arccos(')">cos⁻¹</button>
+            <button class = "btnAlt" onclick="adicionar('arctan(')">tan⁻¹</button>
+            <button class = "btnAlt" onclick="adicionar('sec(')">sec</button>
+            <button class = "btnAlt" onclick="adicionar('cosec(')">cosec</button>
+            <button class = "btnAlt" onclick="adicionar('cot(');">cot</button>
+            <button class = "btnAlt" onclick="adicionar('sinh(')">sinh</button>
+            <button class = "btnAlt" onclick="adicionar('cosh(')">cosh</button>
+            <button class = "btnAlt" onclick="adicionar('tanh(')">tanh</button>
+            <button class = "btnAlt" onclick="adicionar('arcsinh(')">sinh⁻¹</button>
+            <button class = "btnAlt" onclick="adicionar('arccosh(')">cosh⁻¹</button>
+            <button class = "btnAlt" onclick="adicionar('arctanh(')">tanh⁻¹</button>
+        </div>
+        <div id = "matrizOpEsp">
+            <button class = "btnAlt" onclick="inv();">inv</button>
+            <button class = "btnAlt" onclick="trocaAngulo();" id = "btnAng">rad</button>
+            <button class = "btnAlt" onclick="adicionar('√(');">√</button>
+            <button class = "btnAlt" onclick="adicionar('sin(');">sin</button>
+            <button class = "btnAlt" onclick="adicionar('cos(');">cos</button>
+            <button class = "btnAlt" onclick="adicionar('tan(');">tan</button>
+            <button class = "btnAlt" onclick="adicionar('abs(');">|x|</button>
+            <button class = "btnAlt" onclick="adicionar('π');">π</button>
+            <button class = "btnAlt" onclick="adicionar('ln(');">ln</button>
+            <button class = "btnAlt" onclick="adicionar('log(');">log</button>
+            <button class = "btnAlt" onclick="umporx();">1/x</button>
+            <button class = "btnAlt" onclick="adicionar('e');">e</button>
+            <button class = "btnAlt" onclick="adicionar('%');">%</button>
+            <button class = "btnAlt" onclick="adicionar('!')">x!</button>
+            <button class = "btnAlt" onclick="adicionar('^(');">^</button>
+        </div>
+        <div id = "matriz">
+            <button class="btn" onclick="adicionar('(');">(</button>
+            <button class="btn" onclick="adicionar(')');">)</button>
+            <button class="btn" onclick="limpar();">C</button>
+
+        <button class = "btn" id = "backspace" onclick = "backspace();">⌫</button>
+
+            <button class = "btn" onclick="adicionar(1);">1</button>
+            <button class = "btn" onclick="adicionar(2);">2</button>
+            <button class = "btn" onclick="adicionar(3);">3</button>
+
+            <button class = "btn" id = "btnmais" onclick="adicionar('+')">+</button>
+
+            <button class = "btn" onclick="adicionar(4);">4</button>
+            <button class = "btn" onclick="adicionar(5);">5</button>
+            <button class = "btn" onclick="adicionar(6);">6</button>
+
+            <button class = "btn" id = "btnmenos" onclick="adicionar('-')">-</button>
+
+            <button class = "btn" onclick="adicionar(7);">7</button>
+            <button class = "btn" onclick="adicionar(8);">8</button>
+            <button class = "btn" onclick="adicionar(9);">9</button>
+
+            <button class = "btn" id = "btndiv" onclick="adicionar('÷')">÷</button>
+
+            <button class = "btn" onclick="adicionar('.');">.</button>
+            <button class = "btn" onclick="adicionar(0);">0</button>
+            <button class = "btn" onclick = "igual()">=</button>
+
+
+            <button class = "btn" id = "btnmult" onclick="adicionar('×')">×</button>
+        
+    </div>
+
+    <script src = "calculos.js"></script>
+</body>
+</html>
+
